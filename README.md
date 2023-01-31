@@ -37,27 +37,22 @@ First, click on the open in colab button present on the top centre of the notebo
 
 In this .ipynb file, we have -
 
-• EDA on Bike sharing demand prediction.
+* EDA on Bike sharing demand prediction.
 
-• Hypothesis.
+* Hypothesis.
 
-• Fitting different models and cross validate them.
+* Fitting different models and cross validate them.
 
-2) Kaggle Dataset
-
-Downlaod the dataset from kaggle through provided link.Then, connect to the runtime and execute the cell to mount the drive or upload the data file to the current runtime.
-
-3) Cell Path
-
-Finally, delete the path in the dataset loading cell and replace it with the path of your current data file. Run each cell to see the output below it.
+* Evaluating result by Evaluation metrics.
 
 📘 Algorithms Used
 Linear Regression
-Lasso and Ridge Regression
+Lasso, Ridge and Elastic net Regression
 Decision tree
 Random Forest
 Gradient Boosting
+XGBRegression
 Conclusions
-● When we compare the root mean squared error and mean absolute error of all the models, the random forest regression model has less root mean squared error and mean absolute error, ending with the R-squared of 99% . So, finally this model is best for predicting the bike rental count on daily basis.
+● The result shows the evaluation metrics- R-squared, Adjusted R2 showed highest value and MSE, RMSE showed lowest value for XGBoost model. Gradient Boosting and XGBoost models are found to be the best models. Therefore, either Gradient Boosting or XGBoost model can be used to predict the number of bikes required at each hour. So, finally this model is best for predicting the bike rental count on daily basis.
 
 ● For all the models, temperature or hour was ranked as the most influential variable to predict the rental bike demand at each hour.
